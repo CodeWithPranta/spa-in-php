@@ -27,7 +27,7 @@
             {{session()->get('message')}}
             </h5>
             <p class="text-base leading-relaxed text-body-color">
-            Click here to <a class="bg-primary text-white px-2 py-2" href="/login" wire:navigate.hover> Login</a>
+            Click here to <a class="bg-primary text-white px-2 py-2" href="/login" > Login</a>
             </p>
         </div>
         </div>

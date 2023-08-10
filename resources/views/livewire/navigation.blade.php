@@ -16,13 +16,13 @@
                     <nav :class="!navbarOpen ? 'hidden' : ''" id="navbarCollapse" class="absolute z-40 right-4 top-full w-full max-w-[250px] rounded-lg bg-white py-5 px-6 shadow lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none">
                         <ul class="block lg:flex">
                             <li>
-                                <a href="javascript:void(0)" class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex">Home</a>
+                                <a href="/" wire:navigate.hover class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex">Home</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex">Blog</a>
+                                <a href="/blogs" wire:navigate.hover class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex">Blog</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex">Contact</a>
+                                <a href="/contact" wire:navigate.hover class="text-dark hover:text-primary flex py-2 text-base font-medium lg:ml-12 lg:inline-flex">Contact</a>
                             </li>
                         </ul>
                     </nav>

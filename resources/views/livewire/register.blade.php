@@ -1,3 +1,6 @@
+<x-slot name="title">
+    {{__('Registration Form')}}
+</x-slot>
 <!-- ====== Forms Section Start -->
 <section class="bg-[#F4F7FF] py-20 lg:py-[120px]">
     <div class="container mx-auto">

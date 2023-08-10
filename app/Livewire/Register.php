@@ -22,6 +22,8 @@ class Register extends Component
         $validated['password'] = bcrypt($validated['password']);
         User::create($validated);
 
+        $this->reset('name', 'email', 'password', 'password_confirmation');
+
         session()->flash('message', 'Your account has created successfully!');
     }
 

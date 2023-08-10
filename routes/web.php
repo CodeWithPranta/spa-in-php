@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\GeneralController;
+use App\Livewire\Blog;
+use App\Livewire\Contact;
 use App\Livewire\Counter;
 use App\Livewire\Job;
 use App\Livewire\Login;
@@ -24,8 +26,10 @@ Route::get('/', function () {
 
 Route::get('/', Job::class);
 Route::get('/count', Counter::class);
-Route::get('/register', Register::class)->name('register');
-Route::get('/login', Login::class)->name('login');
+Route::get('/register', Register::class)->name('register')->middleware('guest');
+Route::get('/login', Login::class)->name('login')->middleware('guest');
+Route::get('/blogs', Blog::class);
+Route::get('/contact', Contact::class);
 
 // Traditional Routes
 Route::post('/logout', [GeneralController::class, 'logout'])->name('user.logout');
